@@ -9,932 +9,350 @@
       </IconStyle>
     </Style>
     <Placemark>
-      <n>Aspen Recreation Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[0861 Maroon Creek Rd, Aspen, CO 81611]]></description>
-      <Point>
-        <coordinates>-106.851041,39.189556</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Suwanee Sports Academy</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3640 Burnette Rd, Suwanee, GA 30024]]></description>
-      <Point>
-        <coordinates>-84.076896,34.038656</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Windy Hill Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[135 Interstate Pkw NW Atlanta, GA 30339]]></description>
-      <Point>
-        <coordinates>-84.466891,33.902935</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Boston Sports Institute</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[900 Worcester St, Wellesley, MA 02482]]></description>
-      <Point>
-        <coordinates>-71.27875,42.300596</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Cambridge Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[215 First St, Cambridge, MA 02142]]></description>
-      <Point>
-        <coordinates>-71.078544,42.364215</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Fieldhouse Sudbury</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[31 Union Ave, Sudbury, MA 01776]]></description>
-      <Point>
-        <coordinates>-71.427354,42.362817</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>J.W. Hayden Recreation Centre</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[24 Lincoln St, Lexington, MA 02421]]></description>
-      <Point>
-        <coordinates>-71.238815,42.446984</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Brace Family YMCA</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3127 Weddington Rd, Matthews, NC 28105]]></description>
-      <Point>
-        <coordinates>-80.729428,35.084648</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Hi Five Sports Zone Northbrook</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1515 Lake Cook Road unit 2030, Northbrook, IL 60062]]></description>
-      <Point>
-        <coordinates>-87.816384,42.150337</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Just For Kicks Soccer Complex</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[10200 Soccer Dr, Plainfield, IL 60585]]></description>
-      <Point>
-        <coordinates>-88.246425,41.696189</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Lakeshore Sport and Fitness</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1320 W Fullerton Ave, Chicago, IL 60614]]></description>
-      <Point>
-        <coordinates>-87.661257,41.925099</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>North Shore Sports and Wellness</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[550 Lake Cook Rd, Deerfield, IL 60015]]></description>
-      <Point>
-        <coordinates>-87.841389,42.157926</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>TOCA Soccer and Sports Center Evanston</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2454 Oakton St, Evanston, IL 60202]]></description>
-      <Point>
-        <coordinates>-87.707702,42.024862</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Cooper Fitness Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[12100 Preston Road, Dallas, TX 75230]]></description>
-      <Point>
-        <coordinates>-96.801323,32.91436</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>CUMC Sports and Rec Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3101 Coit Rd, Plano, TX 75075]]></description>
-      <Point>
-        <coordinates>-96.770739,33.040292</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>FieldhouseUSA Frisco</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6155 Sports Village Rd, Frisco, TX 75033]]></description>
-      <Point>
-        <coordinates>-96.829788,33.161188</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Plano Sports Authority</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6500 Preston Meadow Dr, Plano, TX 75024]]></description>
-      <Point>
-        <coordinates>-96.777069,33.061509</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Achieve Sports Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[22675 E Aurora Pkwy Aurora, CO 80016]]></description>
-      <Point>
-        <coordinates>-104.724811,39.575786</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Glendale Sports Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4500 E Kentucky Ave, Denver, CO 80246]]></description>
-      <Point>
-        <coordinates>-104.934934,39.699802</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>CERA</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3300 Bryant Irvin Rd., Fort Worth, TX 76109]]></description>
-      <Point>
-        <coordinates>-97.412779,32.702523</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Champion's Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[285 Shady Oaks Dr Southlake, TX 76092]]></description>
-      <Point>
-        <coordinates>-97.158105,32.943675</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Keller Pointe</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[405 Rufe Snow Dr, Keller, TX 76248]]></description>
-      <Point>
-        <coordinates>-97.230737,32.92889</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Grand Parkway Sports</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[22309 Gosling Rd, Spring, TX 77389]]></description>
-      <Point>
-        <coordinates>-95.508622,30.088509</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Life Time Greenway</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1 Healthy Way, Houston, TX 77046]]></description>
-      <Point>
-        <coordinates>-95.435,29.731303</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Open Court Sports Complex</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1808 Woodcreek Bend Ln, Katy, TX 77494]]></description>
-      <Point>
-        <coordinates>-95.832475,29.758218</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Den Sports Facility</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[17120 House an Hahl Rd, Cypress, TX 77433]]></description>
-      <Point>
-        <coordinates>-95.797882,29.995515</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Villa Sport - Katy</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[9930 Gaston Rd, Katy, TX 77494]]></description>
-      <Point>
-        <coordinates>-95.811757,29.737799</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Las Vegas Sportspark</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1400 N Rampart Blvd, Las Vegas, NV 89128]]></description>
-      <Point>
-        <coordinates>-115.284991,36.186585</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>1st Place Sports Complex</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[9400 Penfield Ave, Chatsworth, CA 91311]]></description>
-      <Point>
-        <coordinates>-118.56938,34.24112</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Bay Club El Segundo</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2250 Park Pl, El Segundo, CA 90245]]></description>
-      <Point>
-        <coordinates>-118.385239,33.905357</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Bay Club Redondo Beach</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[819 N Harbor Dr, Redondo Beach, CA 90277]]></description>
-      <Point>
-        <coordinates>-118.395982,33.849727</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Clava Sports Facility</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[26923 Fuerte Dr, Lake Forest, CA 92630]]></description>
-      <Point>
-        <coordinates>-117.66047,33.668293</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>ClubSport Aliso Viejo Health and Fitness Gym</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[50 Enterprise, Aliso Viejo, CA 92656]]></description>
-      <Point>
-        <coordinates>-117.729962,33.58259</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Griffin Club Los Angeles</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3084 Motor Ave, Los Angeles, CA 90064]]></description>
-      <Point>
-        <coordinates>-118.41021,34.03423</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>JHoops - Basketball at J Los Angeles</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[5870 W Olympic Blvd, Los Angeles, CA 90036]]></description>
-      <Point>
-        <coordinates>-118.35874,34.05733</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Los Cab Sports Village</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[17272 Newhope St, Fountain Valley, CA 92708]]></description>
-      <Point>
-        <coordinates>-117.92458,33.714703</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Momentous Sports Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[14522 Myford Rd, Irvine, CA 92606]]></description>
-      <Point>
-        <coordinates>-117.802798,33.714193</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>OGP Ladera</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2 Terrace Rd, Ladera Ranch, CA 92694]]></description>
-      <Point>
-        <coordinates>-117.627317,33.558037</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Map Sports Facility</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[12552 Western Ave, Garden Grove, CA 92841]]></description>
-      <Point>
-        <coordinates>-118.000457,33.780199</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Branchburg Sports Complex</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[47 Readington Rd, Branchburg, NJ 08876]]></description>
-      <Point>
-        <coordinates>-74.949409,40.563654</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Centercourt Athletic Club of Chatham</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[222 N Passaic Ave, Florham Park, NJ 07928]]></description>
-      <Point>
-        <coordinates>-74.397996,40.7735</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>New Jersey Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4152 Quakerbridge Rd Lawrenceville, NJ 08648]]></description>
-      <Point>
-        <coordinates>-74.67741,40.291017</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Newtown Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[120 Pheasant Run Newtown, PA 18940]]></description>
-      <Point>
-        <coordinates>-74.910972,40.22287</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Windsor Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[99 Clarksville Rd West Windsor, NJ 08550]]></description>
-      <Point>
-        <coordinates>-74.657066,40.29764</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Globall Sports Centers - Brooklyn</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1561 Bedford Ave, Brooklyn, NY 11225]]></description>
-      <Point>
-        <coordinates>-73.955599,40.668711</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Dr. P. Phillips YMCA Family Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[7000 Dr Phillips Blvd, Orlando, FL 32819]]></description>
-      <Point>
-        <coordinates>-81.492572,28.460226</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Lake Nona Performance Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6775 Chopra Ter, Orlando, FL 32827]]></description>
-      <Point>
-        <coordinates>-81.290418,28.399634</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>AFC Fitness</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[601 Righters Ferry Rd, Bala Cynwyd, PA 19004]]></description>
-      <Point>
-        <coordinates>-75.210951,40.0138</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Ellis Athletic Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3819 West Chester Pike, Newtown Square, PA 19073]]></description>
-      <Point>
-        <coordinates>-75.40172,39.955409</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Camelback Village</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4444 East Camelback Road, Phoenix, AZ 85018]]></description>
-      <Point>
-        <coordinates>-111.982516,33.513911</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Iron Courts</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4874 S Val Vista Dr #100, Gilbert, AZ 85298]]></description>
-      <Point>
-        <coordinates>-111.757019,33.261872</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Life Time - Happy Valley - Peoria</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[24700 N 67th Ave, Peoria, AZ 85383]]></description>
-      <Point>
-        <coordinates>-112.204399,33.708443</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Ocotillo Village Health Club and Spa</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4200 S Alma School Rd, Chandler, AZ 85248]]></description>
-      <Point>
-        <coordinates>-111.86682,33.244901</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Paloma Sports Complex</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3215 S Sossaman Rd Bld. 2, Mesa, AZ 85212]]></description>
-      <Point>
-        <coordinates>-111.670331,33.35728</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Victorium</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[9219 E Hidden Spur Trail, Scottsdale, AZ 85255]]></description>
-      <Point>
-        <coordinates>-111.883114,33.644071</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Bethany Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[15670 NW Central Dr Portland, OR 97229]]></description>
-      <Point>
-        <coordinates>-122.838054,45.554286</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Sunset Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[13939 NW Cornell Rd, Portland, OR 97229]]></description>
-      <Point>
-        <coordinates>-122.820018,45.530536</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Pro 3:5 Sports Academy</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3201 Northside Dr #119, Raleigh, NC 27615]]></description>
-      <Point>
-        <coordinates>-78.582715,35.883942</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Wake Competition Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[Competition Ctr Dr, Morrisville, NC 27560]]></description>
-      <Point>
-        <coordinates>-78.843526,35.852458</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Villa Sport - Roseville</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[291 Conference Center Dr Roseville, CA 95678]]></description>
-      <Point>
-        <coordinates>-121.27237,38.778552</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>25 E Mason St</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[25 E Mason St, Santa Barbara, CA 93101]]></description>
-      <Point>
-        <coordinates>-119.68986,34.413866</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>SBCC</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[721 Cliff Dr, Santa Barbara, CA 93109]]></description>
-      <Point>
-        <coordinates>-119.697137,34.406833</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Swell Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[5800 Cathedral Oaks Rd, Goleta, CA 93117]]></description>
-      <Point>
-        <coordinates>-119.824523,34.452686</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Magnuson Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[7751 63rd Ave NE Seattle, WA 98115]]></description>
-      <Point>
-        <coordinates>-122.26328,47.68691</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>PRO Club Bellevue</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4455 148th Ave NE Bellevue, WA 98007]]></description>
-      <Point>
-        <coordinates>-96.14347,41.21398</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Legarza Kids</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1027 Bransten Rd, San Carlos, CA 94070]]></description>
-      <Point>
-        <coordinates>-122.254644,37.505112</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>My Pro Court and Fitness</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[42982 Osgood Rd, Fremont, CA 94539]]></description>
-      <Point>
-        <coordinates>-121.946636,37.522408</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Oakwood Athletic Club</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4000 Mt Diablo Blvd Lafayette, CA 94549]]></description>
-      <Point>
-        <coordinates>-122.149442,37.890297</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Foundry</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2575 E Bayshore Rd, Redwood City, CA 94063]]></description>
-      <Point>
-        <coordinates>-122.199082,37.487558</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Riekes Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3455 Edison Way Menlo Park, CA 94025]]></description>
-      <Point>
-        <coordinates>-122.198565,37.476799</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Chelsea Piers Connecticut</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1 Blachley Rd Stamford, CT 06902]]></description>
-      <Point>
-        <coordinates>-73.51609,41.051534</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>House of Sports</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1 Elm St, Ardsley, NY 10502]]></description>
-      <Point>
-        <coordinates>-73.851169,41.010333</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Campo Family YMCA</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3414 Culbreath Rd, Valrico, FL 33596]]></description>
-      <Point>
-        <coordinates>-82.247769,27.892704</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>South Tampa Family YMCA</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4312 Cheval Blvd, Lutz, FL 33558]]></description>
-      <Point>
-        <coordinates>-82.50714,28.150016</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The Club at Cheval</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4312 Cheval Blvd, Lutz, FL 33558]]></description>
-      <Point>
-        <coordinates>-82.50714,28.150016</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Onelife Fitness - Bethesda</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4400 Montgomery Ave Bethesda, MD 20814]]></description>
-      <Point>
-        <coordinates>-77.1046,39.00452</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Onelife Fitness - McLean</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1800 Old Meadow Rd McLean, VA 22102]]></description>
-      <Point>
-        <coordinates>-77.215081,38.91717</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Onelife Fitness - Pike and Rose</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[11594 Old Georgetown Rd Rockville, MD 20852]]></description>
-      <Point>
-        <coordinates>-77.117546,39.049224</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Onelife Fitness - Rockville</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1407 Research Blvd Rockville, MD 20852]]></description>
-      <Point>
-        <coordinates>-77.176351,39.091139</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Onelife Fitness - Tysons</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[8250 Greensboro Dr Mclean, VA 22102]]></description>
-      <Point>
-        <coordinates>-77.229919,38.923303</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>The St. James</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6805 Industrial Rd Springfield, VA 22151]]></description>
-      <Point>
-        <coordinates>-77.180299,38.797079</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Life Time - Downtown Palm Beach Gardens</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[11825 Lake Victoria Gardens Ave, Palm Beach Gardens, FL 33410]]></description>
-      <Point>
-        <coordinates>-80.094801,26.850128</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Palm Beach Atlantic University - Greene Complex for Sports and Recreation</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1100 S Dixie Hwy, West Palm Beach, FL 33403]]></description>
-      <Point>
-        <coordinates>-80.053484,26.703349</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Pembroke Pines YMCA Family Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[501 SW 172nd Ave, Pembroke Pines, FL 33029]]></description>
-      <Point>
-        <coordinates>-80.375879,26.001324</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Weston YMCA Family Center</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[20201 Saddle Club Rd, Weston, FL 33327]]></description>
-      <Point>
-        <coordinates>-80.420793,26.105832</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Anaheim/Fullerton</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[149 E Orangethorpe Ave,, Anaheim, CA 92801]]></description>
-      <Point>
-        <coordinates>-117.91605,33.859931</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Bedford</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[21 Commerce Park North, Bedford, NH 03110]]></description>
-      <Point>
-        <coordinates>-71.4582,42.931784</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Bowie</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4891 Tesla Dr Suite E, Bowie, MD 20715]]></description>
-      <Point>
-        <coordinates>-76.710482,38.956586</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Buford</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1839 Buford Hwy, Buford,GA 30518]]></description>
-      <Point>
-        <coordinates>-84.005412,34.102827</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Coppell</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[801 Hammond Street, Suite 100, Coppell, Texas 75019]]></description>
-      <Point>
-        <coordinates>-97.009467,32.951723</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Denver East</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4444 Forest St, Denver, CO]]></description>
-      <Point>
-        <coordinates>-104.926797,39.778057</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Farmington Hills</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[24800 N. Industrial Dr, Farmington Hills, MI 48335]]></description>
-      <Point>
-        <coordinates>-83.425039,42.474116</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Fayetteville</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1311 Steamboat Dr. Ste. 1,, Fayetteville, AR 72704]]></description>
-      <Point>
-        <coordinates>-94.204204,36.080722</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Ft. Myers</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4429 Cleveland Avenue, Suite 130, Ft. Myers, FL 33901]]></description>
-      <Point>
-        <coordinates>-81.869862,26.598025</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Gig Harbor</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[9644 Bujacich Rd., Bldg C/Suite F, Gig Harbor, WA 98332]]></description>
-      <Point>
-        <coordinates>-122.615847,47.342432</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Gretna</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[17878 Oakmont Dr., Omaha, NE 68136]]></description>
-      <Point>
-        <coordinates>-96.194707,41.148656</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Hudson</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3 Security Drive, Hudson, NH 03051]]></description>
-      <Point>
-        <coordinates>-71.42028,42.702444</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Idlewild</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6420 Albemarle Rd., Charlotte, NC 28212]]></description>
-      <Point>
-        <coordinates>-80.735942,35.201476</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Jenks</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3412 W. 114th St. South Suite 104, Jenks, OK, 74037]]></description>
-      <Point>
-        <coordinates>-96.014855,35.998314</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Lenexa</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[14851 W 101st Terrace, Lenexa, KS 66215]]></description>
-      <Point>
-        <coordinates>-94.757039,38.944046</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Lenexa</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[14851 W 101st Terrace, Lenexa, KS 66215]]></description>
-      <Point>
-        <coordinates>-94.757039,38.944046</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Liberty</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[750 Haines Drive, Suite 100,, Liberty MO 64068]]></description>
-      <Point>
-        <coordinates>-94.476635,39.218437</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Mount Pleasant</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[3400 Turgot Lane,, Mount Pleasant, SC 29466]]></description>
-      <Point>
-        <coordinates>-79.766825,32.854262</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - North Sioux City</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[300 Centennial Dr, North Sioux City, SD 57049]]></description>
-      <Point>
-        <coordinates>-96.48912,42.528914</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Peachtree Corners</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4975 Avalon Ridge Parkway, Suite 100, Peachtree Corners, GA 30071]]></description>
-      <Point>
-        <coordinates>-84.194627,33.961997</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - San Marcos</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2937 Norman Strasse Rd, San Marcos, CA 92069]]></description>
-      <Point>
-        <coordinates>-117.202316,33.159947</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Sioux City</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4501 Southern Hills Dr, Sioux City, IA 51106]]></description>
-      <Point>
-        <coordinates>-96.348974,42.441304</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Sioux Falls</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[2325 Enterprise Ave, Tea, SD 57064]]></description>
-      <Point>
-        <coordinates>-96.83588,43.44637</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Springfield</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[4234 S. Reed Ave, Springfield, MO 65804]]></description>
-      <Point>
-        <coordinates>-93.249868,37.136068</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Sugar Land</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[826 Summer Park Dr. Suite# 800, Stafford, TX 77477]]></description>
-      <Point>
-        <coordinates>-95.569856,29.608445</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Sutton Square</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[6325 Falls of Neuse Rd, Suite #24, Raleigh, NC 27615]]></description>
-      <Point>
-        <coordinates>-78.623062,35.869356</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Tampa</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[14420 N Dale Mabry Hwy, Tampa FL 33618]]></description>
-      <Point>
-        <coordinates>-82.507869,28.079204</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Twin Cities NW</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[7115 Northland Terrace N, Brooklyn Park, MN 55428]]></description>
-      <Point>
-        <coordinates>-93.399822,45.084233</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Ventura</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[5120 Ralston Street, Ventura, CA 93003]]></description>
-      <Point>
-        <coordinates>-119.22227,34.259758</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Webster</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[1425 Atlantis Drive, Suite G, Webster, TX 77598]]></description>
-      <Point>
-        <coordinates>-95.137466,29.526512</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <n>Redline Athletics - Westerville</n>
-      <styleUrl>#Target</styleUrl>
-      <description><![CDATA[200 Hoff Road, Suite A, Westerville, OH 43082]]></description>
-      <Point>
-        <coordinates>-82.921804,40.14288</coordinates>
-      </Point>
-    </Placemark>
+<n>Pinkerton Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[260 Southwestern Blvd, Coppell, TX 75019]]></description>
+<Point>
+<coordinates>-96.997571,32.949401</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Davis Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[2701 Parkhaven Dr, Plano, TX 75075]]></description>
+<Point>
+<coordinates>-96.745914,33.034473</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Clear Spring Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[4311 Clearspring Dr, San Antonio, TX 78217]]></description>
+<Point>
+<coordinates>-98.407527,29.530075</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Park Hills Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[119 NE 15th Ave, Amarillo, TX 79107]]></description>
+<Point>
+<coordinates>-101.833346,35.229598</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Foster Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[6718 Pecan Valley Dr, San Antonio, TX 78223]]></description>
+<Point>
+<coordinates>-98.444452,29.359971</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Lamar Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[201 Parland Pl, San Antonio, TX 78209]]></description>
+<Point>
+<coordinates>-98.465731,29.458967</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>B.B. Owen Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[5640 Squires Dr, The Colony, TX 75056]]></description>
+<Point>
+<coordinates>-96.866892,33.107101</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Forman Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[3600 Timberline Dr, Plano, TX 75074]]></description>
+<Point>
+<coordinates>-96.662943,33.020988</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Driscoll Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[17150 Jones Maltsberger Rd, San Antonio, TX 78247]]></description>
+<Point>
+<coordinates>-98.431017,29.595427</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Pleasant Valley Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[4413 River Rd, Amarillo, TX 79108]]></description>
+<Point>
+<coordinates>-101.831697,35.255401</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Highland Park Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[635 Rigsby Ave, San Antonio, TX 78210]]></description>
+<Point>
+<coordinates>-98.462307,29.398986</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Storm Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[435 Brady Blvd, San Antonio, TX 78207]]></description>
+<Point>
+<coordinates>-98.528645,29.403339</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Creekside Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[901 Valley View Dr, Lewisville, TX 75067]]></description>
+<Point>
+<coordinates>-97.006855,33.013912</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Greenwood Hills Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1313 West Shore Dr, Richardson, TX 75080]]></description>
+<Point>
+<coordinates>-96.749389,32.968189</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Stovall Early Childhood Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[3025 Ellington, Houston, TX 77088]]></description>
+<Point>
+<coordinates>-95.456586,29.880669</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Sunrise Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[5123 SE 14th Ave, Amarillo, TX 79104]]></description>
+<Point>
+<coordinates>-101.777104,35.196829</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Tynan Early Childhood Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[925 Gulf St, San Antonio, TX 78202]]></description>
+<Point>
+<coordinates>-98.446388,29.426473</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Lowell Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[919 W Thompson Pl, San Antonio, TX 78226]]></description>
+<Point>
+<coordinates>-98.538679,29.395618</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Garden Ridge Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[2220 S Garden Ridge Blvd, Flower Mound, TX 75028]]></description>
+<Point>
+<coordinates>-97.035056,33.016514</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Springridge Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1801 E Spring Valley Rd, Richardson, TX 75081]]></description>
+<Point>
+<coordinates>-96.690166,32.939092</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>De Santiago EC/PK/K School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1420 Aldine Meadows Rd, Houston, TX 77032]]></description>
+<Point>
+<coordinates>-95.364614,29.933352</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Valley View Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1201 S Capital of Texas Hwy, Austin, TX 78746]]></description>
+<Point>
+<coordinates>-97.747732,30.145684</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Knox Early Childhood Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[302 Tipton Ave, San Antonio, TX 78204]]></description>
+<Point>
+<coordinates>-98.500842,29.393705</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Highland Village Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[301 Brazos Blvd, Highland Village, TX 75077]]></description>
+<Point>
+<coordinates>-97.044149,33.082332</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Spring Valley Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[13535 Spring Grove Ave, Dallas, TX 75240]]></description>
+<Point>
+<coordinates>-96.775785,32.933509</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Eckert Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1430 Aldine Meadows Rd, Houston, TX 77032]]></description>
+<Point>
+<coordinates>-95.363177,29.933989</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Baskin Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[630 Crestview Dr, San Antonio, TX 78201]]></description>
+<Point>
+<coordinates>-98.561341,29.486347</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Nelson Early Childhood Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1014 Waverly Ave, San Antonio, TX 78201]]></description>
+<Point>
+<coordinates>-98.527802,29.447116</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Polser Elementary STEM Academy</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1520 Polser Rd, Carrollton, TX 75010]]></description>
+<Point>
+<coordinates>-96.900486,33.026216</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Thurgood Marshall Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[9666 Ferris Branch Blvd, Dallas, TX 75243]]></description>
+<Point>
+<coordinates>-96.724616,32.902396</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Oleson Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[12345 Vickery St, Houston, TX 77039]]></description>
+<Point>
+<coordinates>-95.324722,29.904883</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Carroll Early Childhood Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[463 Holmgreen Rd, San Antonio, TX 78220]]></description>
+<Point>
+<coordinates>-98.414369,29.40747</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Douglass Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[318 Martin Luther King Dr, San Antonio, TX 78203]]></description>
+<Point>
+<coordinates>-98.474016,29.412301</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Armstrong Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[3805 Timberline Dr, Plano, TX 75074]]></description>
+<Point>
+<coordinates>-96.659294,33.021428</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Dobie Pre-Kindergarten Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[14040 Rolling Hills Ln, Dallas, TX 75240]]></description>
+<Point>
+<coordinates>-96.763798,32.934693</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Raymond Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[1605 Connorvale Rd, Houston, TX 77039]]></description>
+<Point>
+<coordinates>-95.360939,29.910219</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Gates Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[510 Morningview Dr, San Antonio, TX 78220]]></description>
+<Point>
+<coordinates>-98.427911,29.409655</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Forbes Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[2630 Sally Gay Dr San Antonio, TX 78223]]></description>
+<Point>
+<coordinates>-98.451844,29.372159</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Carpenter Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[3905 Rainier Rd, Plano, TX 75023]]></description>
+<Point>
+<coordinates>-96.72231,33.050223</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Wilshire Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[6523 Cascade Pl, San Antonio, TX 78218]]></description>
+<Point>
+<coordinates>-98.423708,29.487769</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Smith Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[5815 W Little York Rd, Houston, TX 77091]]></description>
+<Point>
+<coordinates>-95.475081,29.862713</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Miller Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[207 Lincolnshire Dr, San Antonio, TX 78220]]></description>
+<Point>
+<coordinates>-98.437905,29.411836</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Huppertz Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[247 Bangor Dr, San Antonio, TX 78228]]></description>
+<Point>
+<coordinates>-98.57391,29.45469</coordinates>
+</Point>
+</Placemark>
+
+    
   </Document>
 </kml>
