@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="Target">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+<Placemark>
+<n>A.M. Pate Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3800 Anglin Dr, Fort Worth, TX 76119<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.252449,32.707491</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Atwood McDonald Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1850 Barron Ln, Fort Worth, TX 76112<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.208749,32.752079</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Bill Elliott Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2501 Cooks Ln, Fort Worth, TX 76120<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.181018,32.742231</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Bruce Shulkey Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5533 Whitman Ave, Fort Worth, TX 76133<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.383221,32.664643</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Charles Nash Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 401 Samuels Ave, Fort Worth, TX 76102<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.329965,32.762381</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Christene C. Moss Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 4108 Eastland St, Fort Worth, TX 76119<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.265308,32.706911</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>David K. Sellars Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 4200 Dorsey St, Forest Hill, TX 76119<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.262442,32.666591</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>De Zavala Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1419 College Ave, Fort Worth, TX 76104<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.334642,32.728243</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>E.M. Daggett Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1108 Carlock St, Fort Worth, TX 76110<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.337666,32.719692</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>East Handley Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2617 Mims St, Fort Worth, TX 76112<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.20694,32.74086</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Edward Briscoe Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2751 Yuma Ave, Fort Worth, TX 76104<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.307451,32.711764</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Harlean Beal Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5615 Forest Hill Dr, Forest Hill, TX 76119<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.274923,32.676916</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Hubbard Heights Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1333 W Spurgeon St, Fort Worth, TX 76115<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.33974,32.678562</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>H.V. Helbing Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3524 N Crump St, Fort Worth, TX 76106<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.342263,32.807716</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>J.T. Stevens Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 6161 Wrigley Way, Fort Worth, TX 76133<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.393741,32.65423</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Leadership Academy Network at Maude Logan Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2300 Dillard St, Fort Worth, TX 76105<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.243819,32.722663</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Manuel Jara Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2100 Lincoln Ave, Fort Worth, TX 76164<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.357854,32.783472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>McLean Sixth Grade</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3201 S Hills Ave, Fort Worth, TX 76109<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.363975,32.695794</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Milton Kirkpatrick Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3229 Lincoln Ave, Fort Worth, TX 76106<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.361481,32.803921</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Morningside Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2751 Mississippi Ave, Fort Worth, TX 76104<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.311214,32.7119</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Natha Howell Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1324 Kings Hwy, Fort Worth, TX 76117<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.286726,32.780585</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>North Hi Mount Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3801 W 7th St, Fort Worth, TX 76107<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.37418,32.751165</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Richard J. Wilson Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 900 W Fogg St, Fort Worth, TX 76110<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.33487,32.691497</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Riverside Applied Learning Center</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3600 Fossil Dr, Fort Worth, TX 76111<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.295598,32.803639</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>S.S. Dillow Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 4000 Avenue N, Fort Worth, TX 76105<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.265262,32.722598</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Seminary Hills Park Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5037 Townsend Dr, Fort Worth, TX 76115<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.347359,32.671937</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>South Hi Mount Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 4101 Birchman Ave, Fort Worth, TX 76107<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.379537,32.733966</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Sunrise-McMillan Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3409 Stalcup Rd, Fort Worth, TX 76119<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.237319,32.711776</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Washington Heights Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3214 Clinton Ave, Fort Worth, TX 76106<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.354863,32.803229</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Westcreek Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3401 Walton Ave, Fort Worth, TX 76133<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.36449,32.6624</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Western Hills Primary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 8300 Mojave Trail, Fort Worth, TX 76116<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.460168,32.734685</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>West Handley Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2749 Putnam St, Fort Worth, TX 76112<br/><b><u>First Year Closed:</u></b> Unknown<br/><b><u>Reuse Status:</u></b> Under Consideration]]></description>
+<Point>
+<coordinates>-97.227013,32.740071</coordinates>
+</Point>
+</Placemark>
+
+
+    
+  </Document>
+</kml>

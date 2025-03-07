@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="Target">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+<n>Valley View Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1201 S Capital of Texas Hwy, Austin, TX 78746<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-97.747732,30.145684</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Pinkerton Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 260 Southwestern Blvd, Coppell, TX 75019<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.997571,32.949401</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>B.B. Owen Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5640 Squires Dr, The Colony, TX 75056<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.867004,33.106524</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Creekside Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 901 Valley View Dr, Lewisville, TX 75067<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-97.006855,33.013912</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Garden Ridge Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2220 S Garden Ridge Blvd, Flower Mound, TX 75028<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-97.035456,33.016169</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Highland Village Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 301 Brazos Blvd, Highland Village, TX 75077<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-97.044162,33.082344</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Polser Elementary STEM Academy</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1520 Polser Rd, Carrollton, TX 75010<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.900483,33.026169</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Carpenter Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3905 Rainier Rd, Plano, TX 75023<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.72231,33.050223</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Greenwood Hills Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1313 West Shore Dr, Richardson, TX 75080<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.749389,32.968189</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Springridge Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1801 E Spring Valley Rd, Richardson, TX 75081<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.690166,32.939092</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Dobie Pre-Kindergarten School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 14040 Rolling Hills Ln, Dallas, TX 75240<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.763798,32.934693</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>McCoy Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2425 McCoy Rd, Carrollton, TX 75006<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-96.8991,32.981404</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>De Santiago EC/PK/K School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1420 Aldine Meadows Rd, Houston, TX 77032<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.364614,29.933352</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Stovall EC/PK/K School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 3025 Ellington St, Houston, TX 77088<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.456586,29.880669</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Eckert Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1430 Aldine Meadows Rd, Houston, TX 77032<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.363177,29.933989</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Oleson Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 12345 Vickery St, Houston, TX 77039<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.324722,29.904883</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Raymond Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1605 Connorvale Rd, Houston, TX 77039<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.360939,29.910219</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Smith Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5815 W Little York Rd, Houston, TX 77091<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-95.475081,29.862713</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Winston Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 2525 S General McMullen Dr, San Antonio, TX 78226<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.562261,29.390116</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Wrenn Middle School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 627 S Acme Rd, San Antonio, TX 78237<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.588742,29.423295</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Coronado Village Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 213 Amistad Blvd, Universal City, TX 78148<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.318072,29.550533</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Baskin Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 630 Crestview Dr, San Antonio, TX 78201<br/><b><u>First Year Closed:</u></b> 2026-27<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.561341,29.486347</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Caroll Early Childhood Campus</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 463 Holmgreen Rd, San Antonio, TX 78220<br/><b><u>First Year Closed:</u></b> 2027-28<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.414369,29.40747</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Douglass</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 318 Martin Luther King Dr, San Antonio, TX 78203<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.474016,29.412301</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Foster Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 6718 Pecan Valley Dr, San Antonio, TX 78223<br/><b><u>First Year Closed:</u></b> 2026-27<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.444452,29.359971</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Gates Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 510 Morningview Dr, San Antonio, TX 78220<br/><b><u>First Year Closed:</u></b> 2027-28<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.427911,29.409655</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Highland Park Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 635 Rigsby Ave, San Antonio, TX 78210<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.462307,29.398986</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Huppertz Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 247 Bangor Dr, San Antonio, TX 78228<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.57391,29.45469</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Kelly Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1026 Thompson Pl, San Antonio, TX 78226<br/><b><u>First Year Closed:</u></b> 2026-27<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.541179,29.394786</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Knox Early Childhood Campus</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 302 Tipton Ave, San Antonio, TX 78204<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.500842,29.393705</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Lamar Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 201 Parland Pl, San Antonio, TX 78209<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.465731,29.458967</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Nelson Early Childhood Campus</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 1014 Waverly Ave, San Antonio, TX 78201<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.527802,29.447116</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Steele Academy</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 722 Haggin St, San Antonio, TX 78210<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.461761,29.387415</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Storm Elementary School</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 435 Brady Blvd, San Antonio, TX 78207<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.528645,29.403339</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>WW White</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 545 S WW White Rd, San Antonio, TX 78220<br/><b><u>First Year Closed:</u></b> 2024-25<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-98.406648,29.422422</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Park Hills Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 119 NE 15th Ave, Amarillo, TX 79107<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-101.833346,35.229598</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Pleasant Valley Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 4413 River Rd, Amarillo, TX 79108<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-101.831697,35.255401</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Sunrise Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 5123 SE 14th Ave, Amarillo, TX 79104<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-101.777104,35.196829</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Coston Elementary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 707 Trenton St, Lufkin, TX 75901<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-94.712271,31.350249</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<n>Kurth Primary</n>
+<styleUrl>#Closed</styleUrl>
+<description><![CDATA[<b><u>Address:</u></b> 521 York Dr, Lufkin, TX 75901<br/><b><u>First Year Closed:</u></b> 2025-26<br/><b><u>Reuse Status:</u></b> No current reuse]]></description>
+<Point>
+<coordinates>-94.72027,31.321969</coordinates>
+</Point>
+</Placemark>
+  </Document>
+</kml>

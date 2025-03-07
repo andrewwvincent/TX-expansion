@@ -11,10 +11,40 @@ export const config = {
     popupInfo: ["Location_Name"],
     locationLayers: [
         {
-            id: 'targets',
-            name: 'Closed or Potentially Closing Schools',
-            file: 'data/target.kml',
-            color: '#FF00FF',  // Purple
+            id: 'available',
+            name: 'No Current Reuse',
+            file: 'data/No_Current_Reuse.kml',
+            color: '#26ff00',  // Green
+            shape: 'circle',
+            size: 16,
+            defaultChecked: false,
+            defaultLabels: false
+        },
+        {
+            id: 'under_review',
+            name: 'Under Consideration',
+            file: 'data/Under_Consideration.kml',
+            color: '#ff8c00',  // Orange
+            shape: 'circle',
+            size: 16,
+            defaultChecked: false,
+            defaultLabels: false
+        },
+        {
+            id: 'unavailable',
+            name: 'Unavailable',
+            file: 'data/Unavailable.kml',
+            color: '#ff0400',  // Red
+            shape: 'circle',
+            size: 16,
+            defaultChecked: false,
+            defaultLabels: false
+        },
+        {
+            id: 'private',
+            name: 'Private Schools',
+            file: 'data/Private_Schools.kml',
+            color: '#0000ff',  // Blue
             shape: 'circle',
             size: 16,
             defaultChecked: false,
