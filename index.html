@@ -38,38 +38,38 @@
         }
 
         /* Location Controls */
-        .location-controls {
+        .location-controls, .status-controls {
             margin-top: 20px;
             padding: 10px;
             border-top: 1px solid #ccc;
         }
 
-        .location-controls h3 {
+        .location-controls h3, .status-controls h3 {
             margin: 0 0 10px 0;
             font-size: 14px;
             font-weight: bold;
             color: #333;
         }
 
-        .location-filters {
+        .location-filters, .status-filters {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
-        .location-filter {
+        .location-filter, .status-filter {
             display: flex;
             align-items: center;
             gap: 6px;
             padding: 4px 0;
         }
 
-        .location-filter input[type="checkbox"] {
+        .location-filter input[type="checkbox"], .status-filter input[type="checkbox"] {
             margin: 0;
             cursor: pointer;
         }
 
-        .location-filter label {
+        .location-filter label, .status-filter label {
             font-size: 13px;
             cursor: pointer;
             user-select: none;
@@ -79,9 +79,51 @@
             transition: all 0.2s;
         }
 
-        .location-filter:hover .pin-preview {
+        .location-filter:hover .pin-preview, .status-filter:hover .pin-preview {
             transform: scale(1.2);
             box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+         /* Enrollment Zone Controls */
+         .enrollment-zone-controls {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .enrollment-zone-controls h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .zone-filters {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .zone-filter {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 0;
+        }
+
+        .zone-filter input[type="checkbox"] {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .zone-filter label {
+            font-size: 13px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .zone-filter:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -90,83 +132,72 @@
         <div class="sidebar">
             <div class="sidebar-content">
                 <h1 id="title">Dynamic Heatmaps - Wealth Distribution</h1>
-                
-
-                <!-- Search Box -->
-                <div class="search-box">
-                    <div id="geocoder" class="geocoder"></div>
-                </div>
 
                 <!-- Layer Controls -->
                 <div class="layer-controls">
                     <form id="filter-form" onsubmit="return false;">
                         <!-- High-Wealth Metrics -->
                         <div class="high-wealth-metrics">
-                            <div class="income-group">
+                            <div class="income-group hidden">
                                 <div class="income-header">
-                                    <input type="checkbox" class="parent-checkbox" id="income500k-parent" checked>
+                                    <input type="checkbox" class="parent-checkbox" id="income500k-parent" >
                                     <h3>$500k+ Households</h3>
                                 </div>
                                 <div id="income500k-categories" class="categories hidden">
-                                    <div class="categories-container" id="income500k-categories">
+                                    <div class="categories-container">
                                         <div class="category-item">
                                             <div class="category-header">
-                                                <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(102, 0, 153, 0.8)"></div>
+                                                <input type="checkbox" class="category-checkbox" >
+                                                <div class="color-box" style="background-color: rgba(255, 0, 0, 0.5)"></div>
                                                 <span class="category-label">1500+ Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1500" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" placeholder="No limit"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1500">
+                                                <input type="number" class="max-input" value="999999">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
-                                                <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(186, 85, 211, 0.8)"></div>
+                                                <input type="checkbox" class="category-checkbox" >
+                                                <div class="color-box" style="background-color: rgba(255, 128, 0, 0.5)"></div>
                                                 <span class="category-label">1250-1500 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1250" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1500" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1250">
+                                                <input type="number" class="max-input" value="1500">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
-                                                <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(220, 20, 60, 0.8)"></div>
+                                                <input type="checkbox" class="category-checkbox" >
+                                                <div class="color-box" style="background-color: rgba(255, 255, 0, 0.5)"></div>
                                                 <span class="category-label">1000-1250 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1000" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1250" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1000">
+                                                <input type="number" class="max-input" value="1250">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
-                                                <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(255, 140, 0, 0.8)"></div>
+                                                <input type="checkbox" class="category-checkbox" >
+                                                <div class="color-box" style="background-color: rgba(0, 128, 0, 0.5)"></div>
                                                 <span class="category-label">750-1000 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="750" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1000" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="750">
+                                                <input type="number" class="max-input" value="1000">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
-                                                <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(255, 215, 0, 0.8)"></div>
+                                                <input type="checkbox" class="category-checkbox" >
+                                                <div class="color-box" style="background-color: rgba(0, 0, 255, 0.5)"></div>
                                                 <span class="category-label">500-750 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="500" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="750" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="500">
+                                                <input type="number" class="max-input" value="750">
                                             </div>
                                         </div>
                                     </div>
@@ -175,76 +206,71 @@
 
                             <div class="income-group">
                                 <div class="income-header">
-                                    <input type="checkbox" class="parent-checkbox" id="income250k-parent">
+                                    <input type="checkbox" class="parent-checkbox" id="income250k-parent" checked>
                                     <h3>$250k+ Households</h3>
                                 </div>
-                                <div id="income250k-categories" class="categories hidden">
-                                    <div class="categories-container" id="income250k-categories">
+                                <div id="income250k-categories" class="categories">
+                                    <div class="categories-container">
                                         <div class="category-item">
                                             <div class="category-header">
                                                 <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(255, 0, 0, 0.6)"></div>
+                                                <div class="color-box" style="background-color: rgba(255, 0, 0, 0.7)"></div>
                                                 <span class="category-label">1500+ Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1500" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" placeholder="No limit"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1500">
+                                                <input type="number" class="max-input" value="999999">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
                                                 <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(255, 128, 0, 0.6)"></div>
+                                                <div class="color-box" style="background-color: rgba(255, 128, 0, 0.7)"></div>
                                                 <span class="category-label">1250-1500 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1250" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1500" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1250">
+                                                <input type="number" class="max-input" value="1500">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
                                                 <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(255, 255, 0, 0.6)"></div>
+                                                <div class="color-box" style="background-color: rgba(255, 255, 0, 0.7)"></div>
                                                 <span class="category-label">1000-1250 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="1000" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1250" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="1000">
+                                                <input type="number" class="max-input" value="1250">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
                                                 <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(0, 255, 0, 0.6)"></div>
+                                                <div class="color-box" style="background-color: rgba(0, 128, 0, 0.7)"></div>
                                                 <span class="category-label">750-1000 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="750" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="1000" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="750">
+                                                <input type="number" class="max-input" value="1000">
                                             </div>
                                         </div>
                                         <div class="category-item">
                                             <div class="category-header">
                                                 <input type="checkbox" class="category-checkbox" checked>
-                                                <div class="color-box" style="background-color: rgba(0, 0, 255, 0.6)"></div>
+                                                <div class="color-box" style="background-color: rgba(0, 0, 255, 0.7)"></div>
                                                 <span class="category-label">500-750 Kids</span>
                                             </div>
                                             <div class="range-inputs hidden">
-                                                <label>From: <input type="number" class="range-min" value="500" min="0"></label>
-                                                <label>To: <input type="number" class="range-max" value="750" min="1"></label>
-                                                <span>Kids</span>
+                                                <input type="number" class="min-input" value="500">
+                                                <input type="number" class="max-input" value="750">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="income-group">
+                            <div class="income-group hidden">
                                 <div class="income-header">
                                     <input type="checkbox" class="parent-checkbox" id="income200k-parent">
                                     <h3>$200k+ Households</h3>
@@ -315,7 +341,7 @@
                                 </div>
                             </div>
 
-                            <div class="income-group">
+                            <div class="income-group hidden">
                                 <div class="income-header">
                                     <input type="checkbox" class="parent-checkbox" id="income150k-parent">
                                     <h3>$150k+ Households</h3>
@@ -389,6 +415,7 @@
                         <div class="error-message" id="filter-error"></div>
                     </form>
                 </div>
+                
             </div>
             <button id="collapse-btn" class="collapse-btn" type="button">X</button>
         </div>
@@ -401,35 +428,20 @@
         import { config } from './config.js';
         import { initTileLoader } from './js/features/tileLoader.js';
         import { initLocationLoader } from './js/features/locationLoader.js';
+        import { MapCore } from './js/core/mapCore.js';
 
-        // Initialize map
-        mapboxgl.accessToken = config.accessToken;
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: config.style,
-            center: config.center,
-            zoom: config.zoom
+        // Wait for DOM and scripts to load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize map using MapCore
+            const mapCore = new MapCore(config);
+            const map = mapCore.initialize();
+
+            // Initialize loaders once map is loaded
+            map.on('load', () => {
+                initTileLoader(map);
+                initLocationLoader(map);
+            });
         });
-
-        // Initialize loaders once map is loaded
-        map.on('load', () => {
-            initTileLoader(map);
-            initLocationLoader(map);
-        });
-
-        // Add navigation controls
-        map.addControl(new mapboxgl.NavigationControl());
-        
-        // Add geocoder
-        const geocoder = new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl,
-            marker: false
-        });
-        map.addControl(geocoder);
-
-        // Add fullscreen control
-        map.addControl(new mapboxgl.FullscreenControl());
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

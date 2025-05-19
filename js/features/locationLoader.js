@@ -3,6 +3,40 @@ import { config } from '../../config.js';
 
 let map; // Will be initialized from main script
 let popup; // Global popup for hover states
+let activeStatusFilters = new Set(['#Open', '#Proposed', '#Under-Review', '#Closing', '#Closed', '#Repurposed', '#Consolidated']); // Track active status filters
+
+// Status to zone type mapping
+const statusToZoneType = {
+    '#Closed': 'closed',
+    '#Closing': 'closing',
+    '#Under-Review': 'under-review',
+    '#Open': 'open',
+    '#Proposed': 'proposed',
+    '#Repurposed': 'repurposed',
+    '#Consolidated': 'consolidated'
+};
+
+// Zone type to status mapping
+const zoneTypeToStatus = {
+    'closed': '#Closed',
+    'closing': '#Closing',
+    'under-review': '#Under-Review',
+    'open': '#Open',
+    'proposed': '#Proposed',
+    'repurposed': '#Repurposed',
+    'consolidated': '#Consolidated'
+};
+
+// Status colors for zones
+const statusColors = {
+    '#Closed': '#C62828',
+    '#Closing': '#FB8C00',
+    '#Under-Review': '#FFC107',
+    '#Open': '#00ACC1',
+    '#Proposed': '#1E88E5',
+    '#Repurposed': '#43A047',
+    '#Consolidated': '#8E24AA'
+};
 
 // Initialize location loader
 export function initLocationLoader(mapInstance) {
@@ -19,12 +53,12 @@ export function initLocationLoader(mapInstance) {
     });
 
     createLocationFilters();
+    createStatusFilters();
     loadLocationLayers();
 }
 
 // Create location filters in HTML
 function createLocationFilters() {
-    const sidebar = document.querySelector('.sidebar-content');
     const filterForm = document.getElementById('filter-form');
 
     // Create location filters section
@@ -44,23 +78,91 @@ function createLocationFilters() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = `location-${layer.id}`;
-        checkbox.checked = true; // Default to checked
+        checkbox.checked = layer.defaultChecked; // Always checked by default
         checkbox.addEventListener('change', () => toggleLocationLayer(layer.id));
 
-        // Create pin preview
-        const pinPreview = document.createElement('span');
-        pinPreview.className = 'pin-preview';
-        pinPreview.style.cssText = `
+        // Create shape preview container
+        const shapeContainer = document.createElement('span');
+        shapeContainer.style.cssText = `
             display: inline-block;
-            width: ${layer.size || 12}px;
-            height: ${layer.size || 12}px;
-            border-radius: 50%;
-            background-color: ${layer.color};
-            border: 1.5px solid #000000;
-            margin-right: 6px;
             vertical-align: middle;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            margin: 0 8px;
         `;
+
+        // Create SVG for shape preview
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('width', '24');
+        svg.setAttribute('height', '24');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        
+        let shapePath;
+        if (layer.defaultShape === 'circle') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            shapePath.setAttribute('cx', '12');
+            shapePath.setAttribute('cy', '12');
+            shapePath.setAttribute('r', '8');
+        } else if (layer.defaultShape === 'square') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            shapePath.setAttribute('x', '4');
+            shapePath.setAttribute('y', '4');
+            shapePath.setAttribute('width', '16');
+            shapePath.setAttribute('height', '16');
+        } else if (layer.defaultShape === 'star') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const points = [];
+            const outerRadius = 10;
+            const innerRadius = outerRadius * 0.4;
+            for (let i = 0; i < 10; i++) {
+                const radius = i % 2 === 0 ? outerRadius : innerRadius;
+                const angle = (i * Math.PI) / 5 - Math.PI / 2;
+                const x = 12 + radius * Math.cos(angle);
+                const y = 12 + radius * Math.sin(angle);
+                points.push(`${i === 0 ? 'M' : 'L'} ${x} ${y}`);
+            }
+            points.push('Z');
+            shapePath.setAttribute('d', points.join(' '));
+        } else if (layer.defaultShape === 'triangle') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const height = 16;
+            const side = height * 2 / Math.sqrt(3);
+            shapePath.setAttribute('d', `M 12 4 L ${12 + side/2} 20 L ${12 - side/2} 20 Z`);
+        } else if (layer.defaultShape === 'diamond') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            shapePath.setAttribute('d', 'M 12 4 L 20 12 L 12 20 L 4 12 Z');
+        } else if (layer.defaultShape === 'hexagon') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const hexPoints = [];
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3 - Math.PI / 6;
+                const x = 12 + 8 * Math.cos(angle);
+                const y = 12 + 8 * Math.sin(angle);
+                hexPoints.push(`${i === 0 ? 'M' : 'L'} ${x} ${y}`);
+            }
+            hexPoints.push('Z');
+            shapePath.setAttribute('d', hexPoints.join(' '));
+        } else if (layer.defaultShape === 'pentagon') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const pentPoints = [];
+            for (let i = 0; i < 5; i++) {
+                const angle = (i * 2 * Math.PI) / 5 - Math.PI / 2;
+                const x = 12 + 8 * Math.cos(angle);
+                const y = 12 + 8 * Math.sin(angle);
+                pentPoints.push(`${i === 0 ? 'M' : 'L'} ${x} ${y}`);
+            }
+            pentPoints.push('Z');
+            shapePath.setAttribute('d', pentPoints.join(' '));
+        } else if (layer.defaultShape === 'cross') {
+            shapePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            shapePath.setAttribute('d', 'M 4 12 L 20 12 M 12 4 L 12 20');
+            shapePath.setAttribute('stroke-linecap', 'square');
+        }
+
+        shapePath.setAttribute('fill', '#888888'); // Use a neutral gray for shape preview
+        shapePath.setAttribute('stroke', '#000');
+        shapePath.setAttribute('stroke-width', config.defaultStrokeWidths[layer.defaultShape]);
+
+        svg.appendChild(shapePath);
+        shapeContainer.appendChild(svg);
 
         const label = document.createElement('label');
         label.htmlFor = `location-${layer.id}`;
@@ -68,13 +170,122 @@ function createLocationFilters() {
         label.style.verticalAlign = 'middle';
 
         filterContainer.appendChild(checkbox);
-        filterContainer.appendChild(pinPreview);
+        filterContainer.appendChild(shapeContainer);
         filterContainer.appendChild(label);
         locationFilters.appendChild(filterContainer);
     });
 
     locationSection.appendChild(locationFilters);
     filterForm.appendChild(locationSection);
+}
+
+// Create status filters in HTML
+function createStatusFilters() {
+    const filterForm = document.getElementById('filter-form');
+
+    // Create status filters section
+    const statusSection = document.createElement('div');
+    statusSection.className = 'status-controls';
+    statusSection.innerHTML = '<h3>Status Filters</h3>';
+
+    // Create container for status filters with grey background
+    const statusFilters = document.createElement('div');
+    statusFilters.className = 'status-filters';
+    statusFilters.style.cssText = `
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        padding: 10px;
+    `;
+
+    // Define status types and their labels
+    const statusTypes = [
+        { id: 'Open', label: 'Open' },
+        { id: 'Proposed', label: 'Proposed' },
+        { id: 'Under-Review', label: 'Under Review' },
+        { id: 'Closing', label: 'Closing' },
+        { id: 'Repurposed', label: 'Repurposed' },
+        { id: 'Consolidated', label: 'Consolidated' },
+        { id: 'Closed', label: 'Closed' }
+    ];
+
+    // Create filters for each status type
+    statusTypes.forEach(status => {
+        const filterContainer = document.createElement('div');
+        filterContainer.className = 'status-filter';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `status-${status.id}`;
+        checkbox.checked = true;
+        checkbox.addEventListener('change', (e) => toggleStatusFilter(status.id, e.target.checked));
+
+        // Create color preview box
+        const colorBox = document.createElement('div');
+        colorBox.style.cssText = `
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: ${config.statusColors['#' + status.id]};
+            border: 1px solid #000000;
+            margin-right: 6px;
+            vertical-align: middle;
+        `;
+
+        const label = document.createElement('label');
+        label.htmlFor = `status-${status.id}`;
+        label.textContent = status.label;
+        label.style.verticalAlign = 'middle';
+
+        filterContainer.appendChild(checkbox);
+        filterContainer.appendChild(colorBox);
+        filterContainer.appendChild(label);
+        statusFilters.appendChild(filterContainer);
+    });
+
+    statusSection.appendChild(statusFilters);
+    filterForm.appendChild(statusSection);
+}
+
+// Toggle status filter
+function toggleStatusFilter(statusId, isVisible) {
+    const styleUrl = `#${statusId}`;
+    if (isVisible) {
+        activeStatusFilters.add(styleUrl);
+    } else {
+        activeStatusFilters.delete(styleUrl);
+    }
+
+    // Update visibility for all layers
+    config.locationLayers.forEach(layer => {
+        const layerId = `layer-${layer.id}`;
+        if (map.getLayer(layerId)) {
+            const locationEnabled = document.getElementById(`location-${layer.id}`).checked;
+            const visibility = locationEnabled ? 'visible' : 'none';
+            map.setLayoutProperty(layerId, 'visibility', visibility);
+
+            if (visibility === 'visible') {
+                // Filter features based on active status filters
+                const filter = ['in', ['get', 'styleUrl'], ['literal', Array.from(activeStatusFilters)]];
+                map.setFilter(layerId, filter);
+            }
+        }
+    });
+
+}
+
+// Toggle location layer
+function toggleLocationLayer(layerId) {
+    const fullLayerId = `layer-${layerId}`;
+    if (map.getLayer(fullLayerId)) {
+        const isVisible = document.getElementById(`location-${layerId}`).checked;
+        map.setLayoutProperty(fullLayerId, 'visibility', isVisible ? 'visible' : 'none');
+        
+        if (isVisible) {
+            // Re-apply status filters when showing layer
+            const filter = ['in', ['get', 'styleUrl'], ['literal', Array.from(activeStatusFilters)]];
+            map.setFilter(fullLayerId, filter);
+        }
+    }
 }
 
 // Load KML layers
@@ -98,6 +309,7 @@ function loadLocationLayers() {
                     const nTag = placemark.getElementsByTagName('n')[0];
                     const title = nTag ? nTag.textContent : '';
                     const description = placemark.getElementsByTagName('description')[0]?.textContent || '';
+                    const styleUrl = placemark.getElementsByTagName('styleUrl')[0]?.textContent || '';
                     
                     // Remove CDATA wrapper if present
                     const cleanDescription = description.replace(/^\[CDATA\[|\]\]$/g, '').trim();
@@ -110,7 +322,8 @@ function loadLocationLayers() {
                         },
                         properties: {
                             name: title,
-                            description: cleanDescription
+                            description: cleanDescription,
+                            styleUrl: styleUrl
                         }
                     };
                 });
@@ -127,135 +340,211 @@ function loadLocationLayers() {
 
                 // Add layer for points
                 const layerId = `layer-${layer.id}`;
+
+                // Create icons for each status color
+                Object.entries(config.statusColors).forEach(([status, color]) => {
+                    // Create icon with the status color and shape
+                    // Remove the '#' from status since our icons are named without it
+                    const statusId = status.slice(1);
+                    const iconId = `${layer.defaultShape}-${statusId}`;
+                    if (!map.hasImage(iconId)) {
+                        const { canvasSize, displaySize, padding } = config.iconConfig;
+                        const scale = canvasSize / displaySize;
+                        
+                        const canvas = document.createElement('canvas');
+                        canvas.width = canvasSize;
+                        canvas.height = canvasSize;
+                        const ctx = canvas.getContext('2d');
+                        
+                        // Clear the canvas
+                        ctx.clearRect(0, 0, canvasSize, canvasSize);
+
+                        // Scale everything up
+                        ctx.save();
+                        ctx.scale(scale, scale);
+
+                        // Set up common styles
+                        ctx.fillStyle = color; 
+                        ctx.strokeStyle = '#000000';
+                        // Scale the stroke width relative to the display size
+                        const baseStrokeWidth = config.defaultStrokeWidths[layer.defaultShape];
+                        const scaledStrokeWidth = (baseStrokeWidth * displaySize * config.iconConfig.strokeScale) / 24;
+                        ctx.lineWidth = scaledStrokeWidth;
+                        ctx.lineCap = 'square';
+
+                        // Convert coordinates to display size
+                        const drawCenter = displaySize / 2;
+                        const drawPadding = padding;
+
+                        switch (layer.defaultShape) {
+                            case 'square':
+                                ctx.beginPath();
+                                ctx.rect(drawPadding, drawPadding, displaySize - 2 * drawPadding, displaySize - 2 * drawPadding);
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'diamond':
+                                ctx.beginPath();
+                                ctx.moveTo(drawCenter, drawPadding);
+                                ctx.lineTo(displaySize - drawPadding, drawCenter);
+                                ctx.lineTo(drawCenter, displaySize - drawPadding);
+                                ctx.lineTo(drawPadding, drawCenter);
+                                ctx.closePath();
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'hexagon':
+                                ctx.beginPath();
+                                const hexRadius = (displaySize - 2 * drawPadding) / 2;
+                                for (let i = 0; i < 6; i++) {
+                                    const angle = (i * Math.PI) / 3 - Math.PI / 6;
+                                    const x = drawCenter + hexRadius * Math.cos(angle);
+                                    const y = drawCenter + hexRadius * Math.sin(angle);
+                                    if (i === 0) ctx.moveTo(x, y);
+                                    else ctx.lineTo(x, y);
+                                }
+                                ctx.closePath();
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'pentagon':
+                                ctx.beginPath();
+                                const pentRadius = (displaySize - 2 * drawPadding) / 2;
+                                for (let i = 0; i < 5; i++) {
+                                    const angle = (i * 2 * Math.PI) / 5 - Math.PI / 2;
+                                    const x = drawCenter + pentRadius * Math.cos(angle);
+                                    const y = drawCenter + pentRadius * Math.sin(angle);
+                                    if (i === 0) ctx.moveTo(x, y);
+                                    else ctx.lineTo(x, y);
+                                }
+                                ctx.closePath();
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'cross':
+                                const crossWidth = (displaySize - 2 * drawPadding) / 3;
+                                ctx.beginPath();
+                                // Horizontal bar
+                                ctx.rect(drawPadding, drawCenter - crossWidth/2, displaySize - 2*drawPadding, crossWidth);
+                                // Vertical bar
+                                ctx.rect(drawCenter - crossWidth/2, drawPadding, crossWidth, displaySize - 2*drawPadding);
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'star':
+                                const outerRadius = (displaySize - 2 * drawPadding) / 2;
+                                const innerRadius = outerRadius * 0.4;
+                                ctx.beginPath();
+                                for (let i = 0; i < 10; i++) {
+                                    const radius = i % 2 === 0 ? outerRadius : innerRadius;
+                                    const angle = (i * Math.PI) / 5 - Math.PI / 2;
+                                    const x = drawCenter + radius * Math.cos(angle);
+                                    const y = drawCenter + radius * Math.sin(angle);
+                                    if (i === 0) ctx.moveTo(x, y);
+                                    else ctx.lineTo(x, y);
+                                }
+                                ctx.closePath();
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'triangle':
+                                const height = displaySize - 2 * drawPadding;
+                                const side = height * 2 / Math.sqrt(3);
+                                ctx.beginPath();
+                                ctx.moveTo(drawCenter, drawPadding);
+                                ctx.lineTo(drawCenter + side/2, displaySize - drawPadding);
+                                ctx.lineTo(drawCenter - side/2, displaySize - drawPadding);
+                                ctx.closePath();
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+
+                            case 'circle':
+                            default:
+                                ctx.beginPath();
+                                ctx.arc(drawCenter, drawCenter, (displaySize - 2 * drawPadding) / 2, 0, Math.PI * 2);
+                                ctx.fill();
+                                ctx.stroke();
+                                break;
+                        }
+
+                        ctx.restore();
+
+                        map.addImage(iconId, {
+                            width: canvasSize,
+                            height: canvasSize,
+                            data: ctx.getImageData(0, 0, canvasSize, canvasSize).data
+                        });
+                    }
+                });
+
+                // Add symbol layer for the points
+                const isVisible = document.getElementById(`location-${layer.id}`).checked;
                 map.addLayer({
                     id: layerId,
-                    type: 'circle',
+                    type: 'symbol',
                     source: sourceId,
-                    paint: {
-                        'circle-radius': layer.size / 2 || 8,
-                        'circle-color': layer.color,
-                        'circle-stroke-width': 1.5,
-                        'circle-stroke-color': '#000000',
-                        'circle-radius-transition': {
-                            duration: 200
-                        },
-                        'circle-stroke-width-transition': {
-                            duration: 200
-                        },
-                        'circle-stroke-opacity': 0.8
-                    }
+                    layout: {
+                        'symbol-placement': 'point',
+                        'icon-image': [
+                            'concat',
+                            layer.defaultShape,
+                            '-',
+                            // Remove the '#' from styleUrl since our icons are named without it
+                            ['slice', ['get', 'styleUrl'], 1]
+                        ],
+                        'icon-size': config.iconConfig.mapIconScale,
+                        'icon-allow-overlap': true,
+                        'visibility': isVisible ? 'visible' : 'none'
+                    },
+                    filter: ['in', ['get', 'styleUrl'], ['literal', Array.from(activeStatusFilters)]]
                 });
 
-                // Add hover state
-                let currentFeature = null;
-                let isHovering = false;
-
-                // Helper function to update popup
-                function updatePopup(feature) {
-                    if (!feature) return;
-                    
-                    const coordinates = feature.geometry.coordinates.slice();
-                    const name = feature.properties.name;
-                    const description = feature.properties.description;
-
-                    // Format popup content with better HTML structure
-                    const popupContent = `
-                        <div class="location-popup-content">
-                            <h3>${name}</h3>
-                            ${description ? `<p>${description}</p>` : ''}
-                        </div>
-                    `;
-
-                    // Ensure the popup is added only once
-                    if (!popup.isOpen()) {
-                        popup.setLngLat(coordinates)
-                            .setHTML(popupContent)
-                            .addTo(map);
-                    } else {
-                        popup.setLngLat(coordinates)
-                            .setHTML(popupContent);
-                    }
-                }
-
+                // Add hover effect
                 map.on('mouseenter', layerId, (e) => {
-                    isHovering = true;
-                    const features = map.queryRenderedFeatures(e.point, { layers: [layerId] });
-                    if (!features.length) return;
-
                     map.getCanvas().style.cursor = 'pointer';
-                    map.setPaintProperty(layerId, 'circle-radius', (layer.size / 2 || 8) + 2);
-                    map.setPaintProperty(layerId, 'circle-stroke-width', 2);
-                    map.setPaintProperty(layerId, 'circle-stroke-opacity', 1);
-
-                    currentFeature = features[0];
-                    updatePopup(currentFeature);
-                });
-
-                map.on('mousemove', layerId, (e) => {
-                    if (!isHovering) return;
-                    
-                    const features = map.queryRenderedFeatures(e.point, { layers: [layerId] });
-                    if (!features.length) {
-                        currentFeature = null;
-                        popup.remove();
-                        return;
+                    if (e.features.length > 0) {
+                        updatePopup(e.features[0]);
                     }
-
-                    // Only update if we're hovering over a different feature
-                    const feature = features[0];
-                    if (currentFeature && 
-                        currentFeature.properties.name === feature.properties.name && 
-                        currentFeature.geometry.coordinates[0] === feature.geometry.coordinates[0] && 
-                        currentFeature.geometry.coordinates[1] === feature.geometry.coordinates[1]) {
-                        return;
-                    }
-
-                    currentFeature = feature;
-                    updatePopup(currentFeature);
                 });
 
                 map.on('mouseleave', layerId, () => {
-                    isHovering = false;
-                    currentFeature = null;
                     map.getCanvas().style.cursor = '';
-                    map.setPaintProperty(layerId, 'circle-radius', layer.size / 2 || 8);
-                    map.setPaintProperty(layerId, 'circle-stroke-width', 1.5);
-                    map.setPaintProperty(layerId, 'circle-stroke-opacity', 0.8);
                     popup.remove();
                 });
-
-                // Add layer for labels if enabled
-                if (layer.defaultLabels) {
-                    const labelLayerId = `label-${layer.id}`;
-                    map.addLayer({
-                        id: labelLayerId,
-                        type: 'symbol',
-                        source: sourceId,
-                        layout: {
-                            'text-field': ['get', 'name'],
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-size': 12
-                        },
-                        paint: {
-                            'text-color': '#000000',
-                            'text-halo-color': '#FFFFFF',
-                            'text-halo-width': 1.5
-                        }
-                    });
-                }
             })
             .catch(error => console.error(`Error loading KML for ${layer.id}:`, error));
     });
 }
 
-// Toggle layer visibility
-function toggleLocationLayer(layerId) {
-    const visibility = document.getElementById(`location-${layerId}`).checked ? 'visible' : 'none';
-    map.setLayoutProperty(`layer-${layerId}`, 'visibility', visibility);
-    
-    // Also toggle label layer if it exists
-    if (map.getLayer(`label-${layerId}`)) {
-        map.setLayoutProperty(`label-${layerId}`, 'visibility', visibility);
+// Helper function to update popup
+function updatePopup(feature) {
+    const coordinates = feature.geometry.coordinates.slice();
+    const name = feature.properties.name;
+    const description = feature.properties.description;
+
+    // Format popup content
+    const content = `
+        <div class="popup-content">
+            <h4>${name}</h4>
+            ${description ? `<p>${description}</p>` : ''}
+        </div>
+    `;
+
+    // Ensure that if the map is zoomed out such that multiple
+    // copies of the feature are visible, the popup appears
+    // over the copy being pointed to.
+    while (Math.abs(coordinates[0]) > 180) {
+        coordinates[0] += coordinates[0] > 0 ? -360 : 360;
     }
+
+    popup.setLngLat(coordinates)
+        .setHTML(content)
+        .addTo(map);
 }
