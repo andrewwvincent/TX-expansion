@@ -288,58 +288,26 @@ function toggleLocationLayer(layerId) {
     }
 }
 
-// Load KML layers
+// Load GeoJSON layers
 function loadLocationLayers() {
     config.locationLayers.forEach(layer => {
-        // Load KML file
+        // Load GeoJSON file
         fetch(layer.file)
-            .then(response => response.text())
-            .then(kmlText => {
-                const parser = new DOMParser();
-                const kml = parser.parseFromString(kmlText, 'text/xml');
-                
-                // Extract coordinates and properties from KML
-                const placemarks = kml.getElementsByTagName('Placemark');
-                const features = Array.from(placemarks).map(placemark => {
-                    const coordinates = placemark.getElementsByTagName('coordinates')[0].textContent
-                        .trim()
-                        .split(',')
-                        .map(Number);
-
-                    const nTag = placemark.getElementsByTagName('n')[0];
-                    const title = nTag ? nTag.textContent : '';
-                    const description = placemark.getElementsByTagName('description')[0]?.textContent || '';
-                    const styleUrl = placemark.getElementsByTagName('styleUrl')[0]?.textContent || '';
-                    
-                    // Remove CDATA wrapper if present
-                    const cleanDescription = description.replace(/^\[CDATA\[|\]\]$/g, '').trim();
-
-                    return {
-                        type: 'Feature',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [coordinates[0], coordinates[1]]
-                        },
-                        properties: {
-                            name: title,
-                            description: cleanDescription,
-                            styleUrl: styleUrl
-                        }
-                    };
+            .then(response => response.json())
+            .then(geojsonData => {
+                // Add default styleUrl if not present
+                geojsonData.features.forEach(feature => {
+                    if (!feature.properties.styleUrl) {
+                        feature.properties.styleUrl = '#Open'; // Default status
+                    }
                 });
 
                 // Create GeoJSON source
                 const sourceId = `source-${layer.id}`;
                 map.addSource(sourceId, {
                     type: 'geojson',
-                    data: {
-                        type: 'FeatureCollection',
-                        features: features
-                    }
+                    data: geojsonData
                 });
-
-                // Add layer for points
-                const layerId = `layer-${layer.id}`;
 
                 // Create icons for each status color
                 Object.entries(config.statusColors).forEach(([status, color]) => {
@@ -485,6 +453,7 @@ function loadLocationLayers() {
                 });
 
                 // Add symbol layer for the points
+                const layerId = `layer-${layer.id}`;
                 const isVisible = document.getElementById(`location-${layer.id}`).checked;
                 map.addLayer({
                     id: layerId,
@@ -519,15 +488,16 @@ function loadLocationLayers() {
                     popup.remove();
                 });
             })
-            .catch(error => console.error(`Error loading KML for ${layer.id}:`, error));
+            .catch(error => console.error(`Error loading GeoJSON for ${layer.id}:`, error));
     });
 }
 
 // Helper function to update popup
 function updatePopup(feature) {
     const coordinates = feature.geometry.coordinates.slice();
-    const name = feature.properties.name;
+    // Extract name from description if not present in properties
     const description = feature.properties.description;
+    const name = feature.properties.name || '';
 
     // Format popup content
     const content = `

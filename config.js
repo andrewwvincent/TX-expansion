@@ -64,7 +64,7 @@ export const config = {
         {
             id: 'Public Schools',
             name: 'Public Schools',
-            file: 'data/Public_Schools.kml',
+            file: 'data/Public_Schools.geojson',
             defaultShape: 'hexagon',  // This location uses hexagons
             defaultChecked: true,
             defaultLabels: false
@@ -72,7 +72,7 @@ export const config = {
         {
             id: 'Private Schools',
             name: 'Private Schools',
-            file: 'data/Private_Schools.kml',
+            file: 'data/Private_Schools.geojson',
             defaultShape: 'circle',  // This location uses hexagons
             defaultChecked: false,
             defaultLabels: false

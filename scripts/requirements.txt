@@ -1,0 +1,2 @@
+fastkml==0.12
+geojson==3.1.0
